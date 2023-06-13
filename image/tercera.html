@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Venta de Autos - Formulario de Contacto</title>
+  <link rel="stylesheet" type="text/css" href="styles.css">
+  <script src="formulario.js"></script>
+</head>
+<body>
+  <header>
+    <nav>
+      <ul>
+        <li><a href="primera.html">Principal</a></li>
+        <li><a href="segunda.html">Empresa</a></li>
+        <li><a href="tercera.html">Formulario de Contacto</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <h1>Formulario de Contacto</h1>
+
+  <form id="contactForm" onsubmit="return validarFormulario()" novalidate>
+    <label for="nombre">Nombre:</label>
+    <input type="text" id="nombre" name="nombre" required>
+
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" required>
+
+    <label for="telefono">Teléfono:</label>
+    <input type="tel" id="telefono" name="telefono" required>
+
+    <label for="ciudad">Ciudad:</label>
+    <input type="text" id="ciudad" name="ciudad" required>
+
+    <label for="pais">País:</label>
+    <input type="text" id="pais" name="pais" required>
+
+    <label for="mensaje">Mensaje:</label>
+    <textarea id="mensaje" name="mensaje" required></textarea>
+
+    <input type="submit" value="Enviar">
+  </form>
+
+  <div id="mensajeError"></div>
+  <div id="datosEnviados"></div>
+</body>
+</html>
+

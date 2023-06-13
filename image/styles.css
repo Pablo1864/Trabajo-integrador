@@ -1,14 +1,17 @@
 body {
   font-family: Arial, sans-serif;
-  background-color: #f2f2f2;
   margin: 0;
-  padding: 0;
+    padding: 0;
+    background: url(fondo.jpg);   
+    background-size: cover;
+    background-position: center;
+    font-family: sans-serif;
 }
 
 nav {
   background-color: #333;
   color: #fff;
-  padding: 10px;
+  padding: 5px;
 }
 
 nav ul {
@@ -27,42 +30,61 @@ nav ul li a {
   padding: 5px;
 }
 
-h1 {
-  color: #333;
+h1 h4 {
+  color: #050505;
   text-align: center;
   margin-top: 30px;
+  
+}
+p {
+  color: #000000;
+  line-height: 1.5;
 }
 
-.carousel {
-  width: 600px;
-  height: 400px;
-  margin: 0 auto;
-  overflow: hidden;
-  position: relative;
+
+
+
+
+.carousel-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 20px;
 }
 
-.carousel img {
-  width: 100%;
-  height: auto;
-  position: absolute;
-  left: 0;
-  top: 0;
-  opacity: 0;
-  transition: opacity 0.5s ease-in-out;
+.carousel-content {
+  display: flex;
+  align-items: center;
 }
 
-.carousel img.activo {
-  opacity: 1;
+.carousel-info {
+  margin-left: 20px;
 }
 
-.controles-carousel {
+.info-container {
+  flex-grow: 1;
+}
+
+.carousel-image {
+  
+  width: 400px;
+  height: 300px;
+}
+
+.boton {
+  display: inline-block;
+  color: #fff;
+  text-transform:uppercase;
+  text-decoration:none;
+  font-weight: 700;
+  border-radius: 5px;
+ margin: 25px;
+ padding: 25px;
   text-align: center;
-  margin-top: 20px;
 }
 
-.controles-carousel button {
-  margin: 0 10px;
-}
+
+
 
   form {
     width: 400px;
